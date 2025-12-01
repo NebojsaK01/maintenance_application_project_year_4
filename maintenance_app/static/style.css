@@ -1,0 +1,313 @@
+/* LOGIN*/
+/* LOGIN*/
+/* LOGIN*/
+
+/* Body and background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container */
+.login-container {
+    background: white;
+    padding: 40px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74,144,226,0.5);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #357ab7;
+}
+
+/* Error message */
+.error {
+    background: #ffdddd;
+    border-left: 4px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #a00;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* Logo styling */
+.login-logo {
+    display: block;
+    margin: 0 auto 20px auto; /* centers the image and adds space below */
+    width: 300px;
+    height: auto; /* maintains aspect ratio */
+    border-radius: 10px; /* rounded corners */
+}
+
+/*  DASHBOARD */
+/*  DASHBOARD */
+/*  DASHBOARD */
+
+
+/* Navbar */
+
+/* Reset body and background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f3;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #4a90e2;
+    display: flex;
+    justify-content: space-between; /* keeps left & right items at each end */
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar-left h2 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Navbar left: logo + text side by side */
+.navbar-left {
+    display: flex;           /* in a row with each other */
+    align-items: center;     /* vertically center logo and text */
+    gap: 10px;               /* space between logo and text */
+}
+
+
+.dashboard-logo {
+    width: 100px;  /* width */
+    border-radius: 10px; /* rounded corners */
+}
+
+
+/*might need this if we have other things beside hamburger*/
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-right .logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.navbar-right .logout-btn:hover {
+    background: #c0392b;
+}
+
+/* Navbar right dropdown */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Hamburger icon */
+.hamburger { /*unicode not image*/
+    font-size: 48px;
+    cursor: pointer;
+    color: white;
+    padding: 5px 10px;
+    user-select: none;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+/* Dropdown content container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px; /* wider to fit multiple buttons */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 10px 0; /* padding top/bottom for container */
+    z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 10px 15px; /*around the buttons*/
+}
+
+/* Buttons inside dropdown */
+.dropdown-btn {
+    width: 100%;
+    background: #4a90e2; /* default color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0; /* spacing between buttons */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left; /* aligns text nicely */
+}
+
+.dropdown-btn:hover {
+    background: #357ab7;
+}
+
+/* Specific style for Logout button */
+.dropdown-btn.logout-btn {
+    background: #e74c3c;
+}
+
+.dropdown-btn.logout-btn:hover {
+    background: #c0392b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dashboard container below navbar */
+.dashboard-container {
+    background: white;
+    padding: 40px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Shadow around the box*/
+    text-align: center;
+    margin: 120px auto 50px auto; /* space from fixed navbar */
+}
+
+
+/*button inside the welcome admin container*/
+.dashboard-container button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dashboard-container button:hover {
+    background: #357ab7;
+}
+
+
+/* Dashboard container below navbar */
+.dashboard-container {
+    background: white;
+    padding: 40px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 120px auto 50px auto; /* space from fixed navbar */
+}
+
+/* Heading and text */
+.dashboard-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dashboard-container p {
+    color: #555;
+}
+
+/* Optional: button inside container (if you add any later) */
+.dashboard-container button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dashboard-container button:hover {
+    background: #357ab7;
+}
+
+

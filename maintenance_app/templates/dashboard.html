@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Left side -->
+        <div class="navbar-left">
+            <img src="{{ url_for('static', filename='images/maintenex logo.png') }}" alt="Logo" class="dashboard-logo">
+            <h2>Dashboard</h2>
+        </div>
+
+        <!-- Right side -->
+        <div class="navbar-right">
+            <div class="dropdown">
+                <!-- Hamburger icon -->
+                <div class="hamburger">
+                    &#9776; <!-- Unicode for 3 lines -->
+                </div>
+                <!-- Dropdown menu -->
+                <div class="dropdown-content">
+                    <a href=""><button class="dropdown-btn">Dashboard</button></a>
+                    <a href=""><button class="dropdown-btn">Alerts</button></a>
+                    <a href=""><button class="dropdown-btn">Techncians Page</button></a>
+                    <a href=""><button class="dropdown-btn">Machines</button></a>
+                    <a href=""><button class="dropdown-btn">Profile</button></a>
+                    <a href="{{ url_for('logout') }}"><button class="dropdown-btn logout-btn">Logout</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Dashboard content -->
+    <div class="dashboard-container">
+        <h1>Welcome, {{ username }}!</h1>
+        <p>You are now logged in.</p>
+    </div>
+</body>
+</html>
